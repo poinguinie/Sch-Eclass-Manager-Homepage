@@ -62,6 +62,14 @@ h2 {
     padding: 0.8rem;
     font-size: 1.2rem;
 }
+li > strong {
+    cursor: pointer;
+}
+li > strong:hover {
+    text-decoration: underline;
+    color:cadetblue;
+    transition: 0.2s;
+}
 .howToUse {
     letter-spacing: 1px;
     line-height: 30px;
