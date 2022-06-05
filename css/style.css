@@ -48,11 +48,31 @@ h2 {
 .header > img {
     float: right;
 }
+.naviList {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.naviList li {
+    cursor: pointer;
+    margin: 0.4rem;
+    font-size: 1.2rem;
+}
+.naviList li:hover {
+    transition: 0.2s;
+    text-decoration: underline;
+    color: #80B463;
+}
 .profile > img {
     max-width: 10vw;
 }
 .content > div {
     margin: 16px;
+    display: none;
+}
+.content > div.active {
+    display: block;
 }
 .info > ul {
     list-style-type: none;
