@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Mono:wght@600&display=swap');
+@font-face {
+    font-family: 'S-CoreDream-4Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-4Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'S-CoreDream-4Regular';
+}
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+img {
+    max-width:  60%;
+    margin-right: 20px;
+}
+a {
+    color: black;
+    text-decoration: underline;
+}
+a:visited, a:active {
+    color: black;
+}
+a:hover {
+    background-color: antiquewhite;
+    transition: 0.3s;
+    color: crimson;
+}
+p {
+    line-height: 1.5rem;
+}
+b {
+    color: crimson;
+}
+.header {
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 16px;
+}
+.header>h2 {
+    text-align: center;
+    font-weight: bold;
+    font-size: 2.2rem;
+    margin-bottom: 8px;
+}
+.header>h4 {
+    text-align: center;
+}
+.content {
+    width: 75%;
+    display: flex;
+    justify-content: center;
+    margin-top: 16px;
+}
+ul {
+    list-style-type: none;
+}
+.content > ul > li {
+    justify-content: space-between;
+    margin-top: 24px;
+    margin-bottom: 24px;
+    padding-top: 16px;
+}
+.content > ul > li > h3 {
+    font-size: 1.6rem;
+    margin-bottom: 12px;
+}
+.box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.box > p {
+    width: 30%;
+}
+.footer {
+    width: 100%;
+    background-color:slategrey;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
