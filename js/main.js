@@ -19,7 +19,7 @@ for (let i = 0; i < lists.length; i++) {
         console.log(actives);
         console.log(activeTab);
         
-        await actives[0].classList.toggle("active");
+        // await actives[0].classList.toggle("active");
         await activeTab.classList.toggle("active");
 
         if (lists[i].innerText === "공지사항") {
