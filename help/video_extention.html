@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>비디오 호환 도움</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Red+Hat+Mono:wght@600&display=swap');
+        @font-face {
+            font-family: 'S-CoreDream-4Regular';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-4Regular.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'S-CoreDream-4Regular';
+        }
+        body {
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        img {
+            max-width:  60%;
+            margin-right: 20px;
+        }
+        a {
+            color: black;
+            text-decoration: underline;
+        }
+        a:visited, a:active {
+            color: black;
+        }
+        a:hover {
+            background-color: antiquewhite;
+            transition: 0.3s;
+            color: crimson;
+        }
+        p {
+            line-height: 1.5rem;
+        }
+        b {
+            color: crimson;
+        }
+        .header {
+            width: 75%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin-top: 16px;
+        }
+        .header>h2 {
+            text-align: center;
+            font-weight: bold;
+            font-size: 2.2rem;
+            margin-bottom: 8px;
+        }
+        .header>h4 {
+            text-align: center;
+        }
+        .content {
+            width: 75%;
+            display: flex;
+            justify-content: center;
+            margin-top: 16px;
+        }
+        ul {
+            list-style-type: none;
+        }
+        .content > ul > li {
+            justify-content: space-between;
+            margin-top: 24px;
+            margin-bottom: 24px;
+            padding-top: 16px;
+        }
+        .content > ul > li > h3 {
+            font-size: 1.6rem;
+            margin-bottom: 12px;
+        }
+        .box {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        .box > p {
+            width: 30%;
+        }
+        .footer {
+            width: 100%;
+            background-color:slategrey;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h2>해당 영상은 비디오 호환이 필요합니다.</h2>
+        <h4>사용에 차질을 드려 죄송합니다. 아래 사항을 따라 문의주시면 최대한 빨리 적용하겠습니다.</h4>
+    </div>
+    <div class="content">
+        <ul>
+            <li>
+                <h3>1. 아이콘 우클릭 후 검사</h3>
+                <div class="box">
+                    <img src="../images/help_1.PNG" alt="도움사진1">
+                    <p>
+                        사진과 같은 창에서 빨간 네모 안의 아이콘을 우클릭 후 <b>검사</b>를 클릭합니다.
+                    </p>
+                </div>
+            </li>
+            <li>
+                <h3>2. 아이콘 이름 알아내기</h3>
+                <div class="box">
+                    <img src="../images/help_2.PNG" alt="도움사진2">
+                    <p>
+                        왼쪽 혹은 아래에 나타나는 코드창에서 파란색 배경이 뜬 줄 <b>xnct-icon</b> (혹은 다른 값일 수도 있습니다.)
+                        옆 <b>mp4, screenLecture</b> 등의 값을 적어둡니다.
+                    </p>
+                </div>
+            </li>
+            <li>
+                <h3>3. 새로고침 (F5) 후 영상 실행</h3>
+                <div class="box">
+                    <img src="../images/help_3.PNG" alt="도움사진3">
+                    <p>
+                        해당 페이지를 새로고침하여 (F5키 누름) 영상을 실행합니다. 인트로가 있으면 인트로를 보고 수업 영상이 시작되면 일시정지
+                        합니다. 그 후 F12키를 누른 후 영상을 우클릭하고 검사를 클릭합니다. 그러면 좌측 사진과 같은 코드가 나오는데
+                        <b>div class="vc-vplay-container"</b> 부분의 좌측 아래 화살표를 클릭하여 사진과 같이 <b>video class=...</b> 가 보이도록 합니다.
+                        그러고 빨간색 박스로 된 부분 (src="" 우측 부분)의 링크를 우클릭 후 <b>open in new tab</b>을 클릭합니다.
+                    </p>
+                </div>
+            </li>
+            <li>
+                <h3>4. 링크 알아내기</h3>
+                <div class="box">
+                    <img src="../images/help_4.PNG" alt="도움사진4">
+                    <p>
+                        링크를 살폈을 때 우측 사진과 같은 데, <b>/contents/media_files/</b> 옆 <b>ㅁㅁㅁ.mp4</b> 부분을 적어둡니다.<br>
+                        (medial_files 부분도 다를 경우 같이 적어둡니다.)
+                    </p>
+                </div>
+            </li>
+            <li>
+                <h3>5. 정보 전송</h3>
+                <p>
+                    적어두었던 아이콘 이름, 링크 이름을 이메일 혹은 <a href="https://open.kakao.com/o/s97TgAbe" target="_blank">카카오톡</a>
+                    으로 보내주시면 신속하게 해결해드리겠습니다!
+                </p>
+            </li>
+        </ul>
+    </div>
+    <div class="footer">
+        개발자 : poinguinie<br>
+        이메일 : poinguinie@gmail.com
+    </div>
+</body>
+</html>
