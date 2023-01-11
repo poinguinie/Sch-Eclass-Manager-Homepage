@@ -12,7 +12,7 @@
         <div class="header">
             <div>
                 <div>Sch Eclass Manager</div>
-                <p>version 1.0.4</p>
+                <p id="version">version error</p>
             </div>
             <img src="./images/logo.png" alt="로고">
         </div>
@@ -119,5 +119,17 @@
         <div class="footer"></div>
     </div>
     <script src="./js/main.js"></script>
+    <script>
+        fetch('https://poinguinie-server-neoyi.run.goorm.io/sch_eclass_manager/get_info/')
+            .then((response) => response.json())
+            .then((data) => {
+                console.log(data.status);
+                if(data.status === 200) {
+                    let version = data.results.version;
+                    console.log(version);
+                    document.getElementById("version").innerText = `version ${version}`;
+                }
+            })
+    </script>
 </body>
 </html>
